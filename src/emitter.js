@@ -14,7 +14,7 @@ const initEmitter = async (event) => {
     const emitter = new Emitter(mongoCollection);
 
     setInterval(() => {
-        emitter.emit(event, new Date());
+        emitter.emit(event, { now: new Date() });
     }, 10000);
 };
 
