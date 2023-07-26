@@ -1,5 +1,5 @@
 export default {
-    hostingPort: 3000,
+    hostingPort: 3002,
     defaultEvent: "ping",
     database: {
         url: "mongodb://127.0.0.1:27017/?replicaSet=rs0",

@@ -16,6 +16,10 @@ const initEmitter = async (event) => {
     setInterval(() => {
         emitter.emit(event, { now: new Date() });
     }, 10000);
+
+    setInterval(() => {
+        emitter.to("special-news").emit("special-news", { news: new Date() });
+    }, 20000);
 };
 
 export { initEmitter };
